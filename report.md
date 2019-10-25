@@ -78,6 +78,7 @@ Briefly describe each use case mentioning the following:
 ### User stories
 
  - **As a participant of the conference, I want to be able to create a post.**
+
 Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a text post.
  - **As a new user, I want to be able to create an account.**
  - **As an already registered user, I want to log in to access the system.**
@@ -91,6 +92,7 @@ Given that the user has already logged in the account, when he is a participant 
  -   **As a forgetful user, I want to be able to request a password reset.**
 
 Here is a simple mockup of our app:
+
 ![Mockup](https://scontent.fopo2-1.fna.fbcdn.net/v/t1.15752-9/72754104_500403967470192_3034766695274119168_n.png?_nc_cat=111&_nc_oc=AQnn9mLuEGrXANtZ_W-uuwwv4JwYcRG1U_5Jlja9NQLRstANSQpyCZUceXOtihJY8ky-XU63pRRRs3FSIVXj5B_7&_nc_ht=scontent.fopo2-1.fna&oh=b7ef8be069947c60a3b1d1f61aea98c6&oe=5E629E81)
 
 
