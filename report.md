@@ -1,4 +1,4 @@
-# openCX-*your module name* Development Report
+# openCX-*One Word* Development Report
 
 Welcome to the documentation pages of the *your (sub)product name* of **openCX**!
 
@@ -76,26 +76,23 @@ Briefly describe each use case mentioning the following:
 * **Alternative Flows and Exceptions**. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions. 
 
 ### User stories
-This section will contain the requirements of the product described as **user stories**, organized in a global **[user story map](https://plan.io/blog/user-story-mapping/)** with **user roles** or **themes**.
 
-For each theme, or role, you may add a small description. User stories should be detailed in the tool you decided to use for project management (e.g. trello or github projects).
+ - **As a participant of the conference, I want to be able to create a post.**
+Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a text post.
+ - **As a new user, I want to be able to create an account.**
+ - **As an already registered user, I want to log in to access the system.**
+ - **As a user, I want to be able to log off my account.**
+ - **As a user, I want to be able to edit my profile. This includes changing my current profile picture and basic info such as name, date of birth...**
 
-A user story is a description of desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is 
+ - **As a user, I want to be able to add someone else as a friend.**
+ - **As a user, I want to be able to check my friends' profiles and like/comment their posts.**
+ - **As a user, I want to be able to check my calendar and the conference's event board.**
+ -   **As a user, I want to be able to upload a story.**
+ -   **As a forgetful user, I want to be able to request a password reset.**
 
-*As a < user role >, I want < goal > so that < reason >.*
+Here is a simple mockup of our app:
+![Mockup](https://scontent.fopo2-1.fna.fbcdn.net/v/t1.15752-9/72754104_500403967470192_3034766695274119168_n.png?_nc_cat=111&_nc_oc=AQnn9mLuEGrXANtZ_W-uuwwv4JwYcRG1U_5Jlja9NQLRstANSQpyCZUceXOtihJY8ky-XU63pRRRs3FSIVXj5B_7&_nc_ht=scontent.fopo2-1.fna&oh=b7ef8be069947c60a3b1d1f61aea98c6&oe=5E629E81)
 
-
-**INVEST in good user stories**. 
-You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the [INVEST guidelines](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/).
-
-**User interface mockups**.
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
-
-**Acceptance tests**.
-For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
-
-**Value and effort**.
-At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
 
 ### Domain model
 
