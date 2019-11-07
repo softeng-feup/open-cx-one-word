@@ -43,6 +43,7 @@ class _HomePageState extends State<HomePage> {
         if(index < posts.length){
           return _buildPostItem(posts[index], paths[index]);
         }
+        return null;
       },
     );
   }
