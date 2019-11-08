@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1062031546824",
+    "firebase_url": "https://myconference-app-90435.firebaseio.com",
+    "project_id": "myconference-app-90435",
+    "storage_bucket": "myconference-app-90435.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062031546824:android:ea6f73ce1a7d459a6f48fd",
+        "android_client_info": {
+          "package_name": "com.oneword.my_conference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062031546824-llvakftjo004ohti553n27h5edgn9uiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCfZ7S74pKAwUE1LlvbolrTvFjNXA9lvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062031546824-llvakftjo004ohti553n27h5edgn9uiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
