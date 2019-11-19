@@ -16,10 +16,19 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
 
-  Future<QuerySnapshot> posts = DatabaseService.getPostsFromUser("gg");
-  
+  //Future<QuerySnapshot> posts = DatabaseService.getPostsFromUser("gg");
+  List<DocumentSnapshot> posts;
+  _getPosts() async{
+    QuerySnapshot query = await DatabaseService.getPostsFromUser(widget.userId);
+    posts = query.documents;
+    
 
-  /* Widget _buildProfilePosts(){
+    //DEBUG PRINT POSTS imgURL
+    posts.forEach((data) => print(data['imgUrl']));
+  }
+
+
+ /*  Widget _buildProfilePosts(){
   return ListView.builder(
     itemBuilder: (context, index){
       if(index < posts.length){
@@ -28,7 +37,7 @@ class _ProfilePageState extends State<ProfilePage> {
       return null;
     },
   );
-} */
+}  */
 
 Widget _buildPostItem(Post post){
   return Row(
@@ -56,7 +65,15 @@ Widget _buildPostItem(Post post){
           ),
         )
       ),      
-      body: Center(child: Text('Profile'),),
+      body: Center(
+        child: RaisedButton(
+          child: Text("GetPostImgUrl"),
+            onPressed: () {
+              _getPosts();
+    },
+),
+
+        ),
       
     );
   }

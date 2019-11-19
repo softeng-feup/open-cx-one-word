@@ -14,7 +14,7 @@ class DatabaseService{
   }
 
   static Future<QuerySnapshot> getPostsFromUser(String uid) {
-    Future<QuerySnapshot> snapshots = postsRef.document(uid).collection('usersPost').getDocuments();
+    Future<QuerySnapshot> snapshots = postsRef.document(uid).collection('usersPosts').getDocuments();
     return snapshots;
   }
 }
