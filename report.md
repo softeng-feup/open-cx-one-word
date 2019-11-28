@@ -150,13 +150,12 @@ Given that the user is already logged in and his friend also has an account on t
 
 -  **As a forgetful user, I want to be able to request a password reset.**
 
+**Mockup of the main page of the app**
+![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/78345999_902245270177249_7848125922447196160_n.png?_nc_cat=102&_nc_ohc=SmWd1eH1DxsAQkPfCvnz6aiqFUW5SIEmA7MSClp-LqALZN8q92SZCTO9Q&_nc_ht=scontent.flis7-1.fna&oh=79faa27d737f79619cd5d0849f49e934&oe=5E4A680F)
   
+**Mockup of a user's profile**
+![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/78100273_460598017795339_7395637176349753344_n.png?_nc_cat=103&_nc_ohc=58YX60gdIKMAQnfPT6549Vo3zX8MFbykp94kWbdEKnG-5srADABqR8RwA&_nc_ht=scontent.flis7-1.fna&oh=8cd5f9d24fae0bac7076009c738f87b9&oe=5E76807D)
 
-Here is a simple mockup of our app:
-
-  
-
-![Mockup](https://scontent.fopo2-1.fna.fbcdn.net/v/t1.15752-9/72754104_500403967470192_3034766695274119168_n.png?_nc_cat=111&_nc_oc=AQnn9mLuEGrXANtZ_W-uuwwv4JwYcRG1U_5Jlja9NQLRstANSQpyCZUceXOtihJY8ky-XU63pRRRs3FSIVXj5B_7&_nc_ht=scontent.fopo2-1.fna&oh=b7ef8be069947c60a3b1d1f61aea98c6&oe=5E629E81)
 
   
   
