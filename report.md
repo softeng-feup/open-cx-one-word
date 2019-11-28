@@ -70,7 +70,7 @@ Greatly improve your conference experience while sharing memories and connecting
 ---
 
 ## Elevator Pitch
-Isn't connecting with other people one of the best parts of a conference? Our app, MyConference, makes sure that your experience is the best it could possibly be. Much like any other social network, you are able to add people at the conference as friends, create new posts - perhaps some thoughts about that amazing talk you just (went to?), or even a picture of your friends attending the event - and, naturally, comment and like your friend's posts. Besides that, our app will allow you to check all the events
+Isn't connecting with other people one of the best parts of a conference? Our app, MyConference, makes sure that your experience is the best it could possibly be. Much like any other social network, you are able to add people at the conference as friends, create new posts - perhaps some thoughts about that amazing talk you just went to, or even a picture of your friends attending the event - and, naturally, comment and like your friend's posts. Besides that, our app will allow you to check all the events
 currently happening so you won't miss anything!
   
 ---
@@ -283,27 +283,13 @@ For the purpose of ESOF, we will use a very simple approach, just to manage feat
   
 
 ## Project management
+The following pictures represent our Trello's state in each iteration, with labels for each one of them. 
 
-  
+**Iteration 1:**
+![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/77237769_3353677271339142_4044629775623389184_n.png?_nc_cat=109&_nc_ohc=iOR9xpF5cYcAQmY8U48dzYHNowcy20ShsWa2qpgMd5k7N1pXrkT5x5Akg&_nc_ht=scontent.flis7-1.fna&oh=7d3e18d92655d3d77b4145da60ef8b44&oe=5E486DFC)
 
-Software project management is an art and science of planning and leading software projects, in which software projects are planned, implemented, monitored and controlled.
+  **Iteration 2:**
+  ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76937839_467558353870479_7474790013411000320_n.png?_nc_cat=101&_nc_ohc=AS3lslmtIgUAQlkdEEYiXtFlaiBEqcpYYsq_kMVvtf3oLzCZZZ1hawm7w&_nc_ht=scontent.flis7-1.fna&oh=991ff23d99370d50b51c576543ec5559&oe=5E444F05)
 
-  
-
-In the context of ESOF, we expect that each team adopts a project management tool capable of registering tasks, assign tasks to people, add estimations to tasks, monitor tasks progress, and therefore being able to track their projects.
-
-  
-
-Example of tools to do this are:
-
-*  [Trello.com](https://trello.com)
-
-*  [Github Projects](https://github.com/features/project-management/com)
-
-*  [Pivotal Tracker](https://www.pivotaltracker.com)
-
-*  [Jira](https://www.atlassian.com/software/jira)
-
-  
-
-We recommend to use the simplest tool that can possibly work for the team.
+**Iteration 3:**
+![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76936388_533023950611187_3340751757557891072_n.png?_nc_cat=103&_nc_ohc=x6P8t4JIYsgAQlX1_ztjx0oJf0f7fSEjMvI4G8IWaanyMP7_AKlhVuNLg&_nc_ht=scontent.flis7-1.fna&oh=40dc26758a1bfc2cf44c3beb6d2c1be9&oe=5E7DE658)
