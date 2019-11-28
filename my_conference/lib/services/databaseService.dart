@@ -14,7 +14,15 @@ class DatabaseService{
   }
 
   static Future<QuerySnapshot> getPostsFromUser(String uid) {
-    Future<QuerySnapshot> snapshots = postsRef.document(uid).collection('usersPost').getDocuments();
+    Future<QuerySnapshot> snapshots = postsRef.document(uid).collection('usersPosts').getDocuments();
+    return snapshots;
+  }
+
+
+  //TODO
+  //Maybe we need to use Algolia here to implement user search with better results
+  static Future<QuerySnapshot> searchUsers(String name) {
+    Future<QuerySnapshot> snapshots = usersRef.where('name', isGreaterThanOrEqualTo: name).getDocuments();
     return snapshots;
   }
 }

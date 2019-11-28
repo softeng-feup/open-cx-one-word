@@ -16,33 +16,87 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
 
-  Future<QuerySnapshot> posts = DatabaseService.getPostsFromUser("gg");
+  //Future<QuerySnapshot> posts = DatabaseService.getPostsFromUser("gg");
   
+  Future<List<DocumentSnapshot>> _getPosts() async{
+    QuerySnapshot query = await DatabaseService.getPostsFromUser(widget.userId);
+    List<DocumentSnapshot> posts = query.documents;
+    
 
-  /* Widget _buildProfilePosts(){
-  return ListView.builder(
-    itemBuilder: (context, index){
-      if(index < posts.length){
-        return _buildPostItem(posts[index]);
-      }
-      return null;
-    },
-  );
-} */
+    //DEBUG PRINT POSTS imgURL
+    //posts.forEach((data) => print(data['imgUrl']));
+    
+    return posts;
+  }
 
-Widget _buildPostItem(Post post){
-  return Row(
-    children: <Widget>[
-      Center(
-        child: CachedNetworkImage(imageUrl: post.imgUrl,),
-      ),
-      Text(post.description),
-    ],
-  );
-}
+  Widget buildPosts(BuildContext context, AsyncSnapshot snapshot) {
+    List<DocumentSnapshot> posts = snapshot.data;
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+    return new ListView.builder(
+        itemCount: posts.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Row(
+            children: <Widget>[
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    Center(
+                      child:
+                        Container(
+                          child: CachedNetworkImage(
+                            height: width/3,
+                            width: width/3,
+                            fit: BoxFit.contain,
+                            imageUrl: posts[index]['imgUrl'],
+                            ),
+                        ),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                children: <Widget>[
+                  Center(
+                    child: 
+                      Text(posts[index]['description'])
+                  ),
+                ],
+              ),
+            ]
+          );
+          /* return new Column(
+            children: <Widget>[
+              new ListTile(
+                title: new Text(posts[index]['imgUrl']),
+              ),
+              new Divider(height: 2.0,),
+            ],
+          ); */
+        },
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
+
+    var futureBuilder = new FutureBuilder(
+      future: _getPosts(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        switch (snapshot.connectionState) {
+          case ConnectionState.none:
+          case ConnectionState.waiting:
+            return new CircularProgressIndicator();
+          default:
+            if (snapshot.hasError)
+              return new CircularProgressIndicator();
+            else
+              return buildPosts(context, snapshot);
+        }
+      },
+    );
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -56,8 +110,7 @@ Widget _buildPostItem(Post post){
           ),
         )
       ),      
-      body: Center(child: Text('Profile'),),
-      
+      body: futureBuilder,
     );
   }
 }
