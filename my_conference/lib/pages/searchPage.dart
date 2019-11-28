@@ -41,7 +41,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF8C2D19),
         title: TextField(
           controller: _searchController,
           decoration: InputDecoration(

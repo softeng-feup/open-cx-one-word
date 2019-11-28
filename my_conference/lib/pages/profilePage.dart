@@ -99,7 +99,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF8C2D19),
         centerTitle: true,
         title: Text(
           'Profile',

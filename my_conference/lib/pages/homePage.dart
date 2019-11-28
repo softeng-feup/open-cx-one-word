@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
         showSelectedLabels: false,   
         showUnselectedLabels: false,
         unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.white,
         currentIndex: _currentTab,
         onTap: (int index){
           setState(() {
@@ -65,22 +65,27 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             title: Text('Home'),
+            backgroundColor: Color(0xFF8C2D19),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             title: Text('Search'),
+            backgroundColor: Color(0xFF8C2D19),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_a_photo),
             title: Text('Post'),
+            backgroundColor: Color(0xFF8C2D19),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             title: Text('Activity'),
+            backgroundColor: Color(0xFF8C2D19),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_box),
             title: Text('Account'),
+            backgroundColor: Color(0xFF8C2D19),
           )
         ],
         
