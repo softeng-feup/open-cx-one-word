@@ -118,7 +118,7 @@ bool _isLoading = false;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF8C2D19),
         centerTitle: true,
         title: Text(
           'Create Post',

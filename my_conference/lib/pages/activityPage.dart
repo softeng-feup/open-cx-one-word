@@ -10,7 +10,7 @@ class _ActivityPageState extends State<ActivityPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF8C2D19),
         centerTitle: true,
         title: Text(
           'Activity',

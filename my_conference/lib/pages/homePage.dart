@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
         showUnselectedLabels: false,
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.blue,
+        backgroundColor: Colors.black,
         currentIndex: _currentTab,
         onTap: (int index){
           setState(() {
