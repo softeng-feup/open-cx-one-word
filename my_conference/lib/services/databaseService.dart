@@ -22,7 +22,7 @@ class DatabaseService{
   //TODO
   //Maybe we need to use Algolia here to implement user search with better results
   static Future<QuerySnapshot> searchUsers(String name) {
-    Future<QuerySnapshot> snapshots = usersRef.where('name', isGreaterThanOrEqualTo: name).getDocuments();
+    Future<QuerySnapshot> snapshots = usersRef.where('name', isGreaterThanOrEqualTo: name).where('name', isLessThan: name + 'z').getDocuments();
     return snapshots;
   }
 }
