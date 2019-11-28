@@ -21,7 +21,9 @@ class _ActivityPageState extends State<ActivityPage> {
           ),
         )
       ),
-      body: Center(child: Text('Activity'),),
+      body: Container(
+        color: Color(0xFFEBE1E1),
+        child: Center(child: Text('Activity'),)),
     );
   }
 }

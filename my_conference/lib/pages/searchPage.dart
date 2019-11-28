@@ -64,31 +64,37 @@ class _SearchPageState extends State<SearchPage> {
           },
         ),
       ),
-      body: _userQuery == null 
-        ? Center(
-          child: Text('Search Page'),
-          )
-        : FutureBuilder(
-        future: _userQuery,
-        builder: (context, snapshot) {
-          if(!snapshot.hasData){
-            return Center(
-              child: CircularProgressIndicator(),
+      body: Container(
+        color: Color(0xFFEBE1E1),
+        child: _userQuery == null 
+          ? Center(
+            child: Text('Search Page'),
+            )
+          : FutureBuilder(
+          future: _userQuery,
+          builder: (context, snapshot) {
+            if(!snapshot.hasData){
+              return Container(
+                color: Color(0xFFEBE1E1),
+                child: Center(
+                  child: CircularProgressIndicator(),
+                  ),
               );
-          }
-          if (snapshot.data.documents.length == 0){
-            return Center(
-              child: Text('0 Results'),
+            }
+            if (snapshot.data.documents.length == 0){
+              return Center(
+                child: Text('0 Results'),
+              );
+            }
+            return ListView.builder(
+              itemCount: snapshot.data.documents.length,
+              itemBuilder: (BuildContext context, int index) {
+                User user = User.fromDoc(snapshot.data.documents[index]);
+                return _buildUser(user);
+              },
             );
-          }
-          return ListView.builder(
-            itemCount: snapshot.data.documents.length,
-            itemBuilder: (BuildContext context, int index) {
-              User user = User.fromDoc(snapshot.data.documents[index]);
-              return _buildUser(user);
-            },
-          );
-      })
+        }),
+      )
     );
   }
 }

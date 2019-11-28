@@ -25,11 +25,14 @@ class _FeedPageState extends State<FeedPage> {
           ),
         )
       ),
-      body: Center(
-        child: FlatButton(
-          onPressed: () => AuthService.logout(),
-          color: Colors.blue,
-          child: Text('Logout'),
+      body: Container(
+        color: Color(0xFFEBE1E1),
+        child: Center(
+          child: FlatButton(
+            onPressed: () => AuthService.logout(),
+            color: Colors.blue,
+            child: Text('Logout'),
+          ),
         ),
       ),
     );

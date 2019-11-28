@@ -36,34 +36,37 @@ class _ProfilePageState extends State<ProfilePage> {
     return new ListView.builder(
         itemCount: posts.length,
         itemBuilder: (BuildContext context, int index) {
-          return Row(
-            children: <Widget>[
-              Container(
-                child: Column(
+          return Container(
+            color: Color(0xFFEBE1E1),
+            child: Row(
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Center(
+                        child:
+                          Container(
+                            child: CachedNetworkImage(
+                              height: width/3,
+                              width: width/3,
+                              fit: BoxFit.contain,
+                              imageUrl: posts[index]['imgUrl'],
+                              ),
+                          ),
+                      ),
+                    ],
+                  ),
+                ),
+                Column(
                   children: <Widget>[
                     Center(
-                      child:
-                        Container(
-                          child: CachedNetworkImage(
-                            height: width/3,
-                            width: width/3,
-                            fit: BoxFit.contain,
-                            imageUrl: posts[index]['imgUrl'],
-                            ),
-                        ),
+                      child: 
+                        Text(posts[index]['description'])
                     ),
                   ],
                 ),
-              ),
-              Column(
-                children: <Widget>[
-                  Center(
-                    child: 
-                      Text(posts[index]['description'])
-                  ),
-                ],
-              ),
-            ]
+              ]
+            ),
           );
           /* return new Column(
             children: <Widget>[
