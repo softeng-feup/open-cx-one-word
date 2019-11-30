@@ -18,6 +18,14 @@ class DatabaseService{
     return snapshots;
   }
 
+  static Future<DocumentSnapshot> getUserDoc(String uid) async {
+    return usersRef.document(uid).get();
+  }
+
+  static Future<String> getNameOfUserId(String uid) async {
+    DocumentSnapshot doc = await getUserDoc(uid);
+    return doc.data['name'].toString();
+  }
 
   //TODO
   //Maybe we need to use Algolia here to implement user search with better results
