@@ -32,6 +32,7 @@ class _ProfilePageState extends State<ProfilePage> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return new ListView.builder(
+      shrinkWrap: true,
       itemCount: posts.length,
       itemBuilder: (BuildContext context, int index) {
         return Container(
@@ -116,7 +117,50 @@ class _ProfilePageState extends State<ProfilePage> {
               fontSize: 25,
             ),
           )),
-      body: futureBuilder,
+      body: Column(
+              children: <Widget>[ 
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      CircleAvatar(
+                        radius: 45,
+                        backgroundImage: NetworkImage('https://byuc.files.wordpress.com/2012/07/avat-2.jpg'),
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Container(
+                            width: 150,
+                            child: FlatButton(
+                              onPressed: () => print('Edit Profile button Pressed'),
+                              color: Colors.blue,
+                              textColor: Colors.white,
+                              child: Text(
+                                'Edit Profile',
+                                style: TextStyle(fontSize: 15),
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      'Username',
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                    Text('Bio'),
+                  ],
+                ),
+                Expanded(child: futureBuilder),
+              ],
+            ),
+        
     );
   }
 }
