@@ -2,7 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:my_conference/models/postModel.dart';
+import 'package:my_conference/models/userModel.dart';
 import 'package:my_conference/services/databaseService.dart';
+import 'package:my_conference/utilities/vars.dart';
 
 class ProfilePage extends StatefulWidget {
   final String userId;
@@ -24,6 +26,59 @@ class _ProfilePageState extends State<ProfilePage> {
     //posts.forEach((data) => print(data['imgUrl']));
 
     return posts;
+  }
+
+  Future<DocumentSnapshot> _getUser() async {
+    DocumentSnapshot query = await DatabaseService.getUserDoc(widget.userId);
+    return query;
+  }
+
+  Widget buildUser(BuildContext context, AsyncSnapshot snapshot) {
+    User user = User.fromDoc(snapshot.data);
+    return new ListView(shrinkWrap: true, children: <Widget>[
+      Padding(
+        padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            CircleAvatar(
+              radius: 45,
+              backgroundImage: NetworkImage(
+                  'https://byuc.files.wordpress.com/2012/07/avat-2.jpg'),
+            ),
+            Column(
+              children: <Widget>[
+                Container(
+                  width: 150,
+                  child: FlatButton(
+                    onPressed: () => print('Edit Profile button Pressed'),
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                    child: Text(
+                      'Edit Profile',
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              user.name,
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+            Text(user.bio),
+          ],
+        ),
+      ),
+    ]);
   }
 
   Widget buildPosts(BuildContext context, AsyncSnapshot snapshot) {
@@ -90,7 +145,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    var futureBuilder = new FutureBuilder(
+    var futureBuilderPosts = new FutureBuilder(
       future: _getPosts(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         switch (snapshot.connectionState) {
@@ -102,6 +157,22 @@ class _ProfilePageState extends State<ProfilePage> {
               return new CircularProgressIndicator();
             else
               return buildPosts(context, snapshot);
+        }
+      },
+    );
+
+    var futureBuilderUser = new FutureBuilder(
+      future: _getUser(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        switch (snapshot.connectionState) {
+          case ConnectionState.none:
+          case ConnectionState.waiting:
+            return new CircularProgressIndicator();
+          default:
+            if (snapshot.hasError)
+              return new CircularProgressIndicator();
+            else
+              return buildUser(context, snapshot);
         }
       },
     );
@@ -118,49 +189,11 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           )),
       body: Column(
-              children: <Widget>[ 
-                Padding(
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      CircleAvatar(
-                        radius: 45,
-                        backgroundImage: NetworkImage('https://byuc.files.wordpress.com/2012/07/avat-2.jpg'),
-                      ),
-                      Column(
-                        children: <Widget>[
-                          Container(
-                            width: 150,
-                            child: FlatButton(
-                              onPressed: () => print('Edit Profile button Pressed'),
-                              color: Colors.blue,
-                              textColor: Colors.white,
-                              child: Text(
-                                'Edit Profile',
-                                style: TextStyle(fontSize: 15),
-                              ),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      'Username',
-                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                      ),
-                    Text('Bio'),
-                  ],
-                ),
-                Expanded(child: futureBuilder),
-              ],
-            ),
-        
+        children: <Widget>[
+          futureBuilderUser,
+          Expanded(child: futureBuilderPosts),
+        ],
+      ),
     );
   }
 }
