@@ -1,3 +1,4 @@
+
 # openCX-*One Word* Development Report
 
   
@@ -48,14 +49,14 @@ So far, contributions are exclusively made by the initial team, but we hope to o
 
 Please contact us!
 
-  
 
 Thank you!
 
-  
-
-*team members names*
-
+ Henrique Maciel de Freitas - 201707046
+João Pedro Pinheiro de Lacerda Campus - 201704982
+Luís Pedro Rodrigues de Morais - 200800621
+Maria Inês Fernandes Alves - 201605335
+Miguel Silveira Rosa - 201706956
   
 
 ---
@@ -65,56 +66,37 @@ Thank you!
 ## Product Vision
 
 Greatly improve your conference experience while sharing memories and connecting with others.
+
   
 
 ---
 
 ## Elevator Pitch
-Isn't connecting with other people one of the best parts of a conference? Our app, MyConference, makes sure that your experience is the best it could possibly be. Much like any other social network, you are able to add people at the conference as friends, create new posts - perhaps some thoughts about that amazing talk you just went to, or even a picture of your friends attending the event - and, naturally, comment and like your friend's posts. Besides that, our app will allow you to check all the events
-currently happening so you won't miss anything!
+Isn't connecting with other people one of the best parts of a conference? Our app, MyConference, makes sure that your experience is the best it could possibly be. Much like any other social network, you are able to add people at the conference as friends, create new posts - perhaps some thoughts about that amazing talk you just went to, or even a picture of your friends attending the event - and, naturally, comment and like your friend's posts. Besides that, our app will allow you to check all the events currently happening so you won't miss anything!
   
 ---
 ## Requirements
 
-  
+As a social network MyConference aims in creating a place to interact and share experiences, being able to create posts with pictures about their experience.
 
-In this section, you should describe all kinds of requirements for your module: functional and non-functional requirements.
+Security is something very important to MyConference. Once you create a post nobody can alter your post, moreover nobidy can create a post in your name, making your account truly yours.
 
-  
+MyComference aims in being user friendly. To this end posting and creating an account is extremely streamlined, being both simple and fast.
 
-Start by contextualizing your module, describing the main concepts, terms, roles, scope and boundaries of the application domain addressed by the project.
-
-  
 
 ### Use case diagram
 
-  
+UML image aqui
 
-Create a use-case diagram in UML with all high-level use cases possibly addressed by your module.
+#
 
-  
+Create an accont: When the user creates an account a new account is added in the data base.
 
-Give each use case a concise, results-oriented name. Use cases should reflect the tasks the user needs to be able to accomplish using the system. Include an action verb and a noun.
+Log in: When the user puts the correct information, he gained permission to the rest of the features in the app (excluding create an account).
 
-  
+See other people post: When the user goes to main page, he can see the other users posts.
 
-Briefly describe each use case mentioning the following:
-
-  
-
-*  **Actor**. Name only the actor that will be initiating this use case, i.e. a person or other entity external to the software system being specified who interacts with the system and performs use cases to accomplish tasks.
-
-*  **Description**. Provide a brief description of the reason for and outcome of this use case, or a high-level description of the sequence of actions and the outcome of executing the use case.
-
-*  **Preconditions and Postconditions**. Include any activities that must take place, or any conditions that must be true, before the use case can be started (preconditions) and postconditions. Describe also the state of the system at the conclusion of the use case execution (postconditions).
-
-  
-
-*  **Normal Flow**. Provide a detailed description of the user actions and system responses that will take place during execution of the use case under normal, expected conditions. This dialog sequence will ultimately lead to accomplishing the goal stated in the use case name and description. This is best done as a numbered list of actions performed by the actor, alternating with responses provided by the system.
-
-*  **Alternative Flows and Exceptions**. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions.
-
-  
+Create a post: The user can create a post, adding the post and the image (if was provided) to the database.
 
 ### User stories
 
@@ -126,14 +108,16 @@ Given that the user has already logged in the account, when he is a participant 
 
 -  **As a new user, I want to be able to create an account.**
 
-?????
+Given that the user has interest in the events of the conference, the user wants an acont to see all the posts and to identify his own posts.
 
 -  **As an already registered user, I want to log in to access the system.**
 
 Given that the user has already registered an account, then he is able to log in to access the system.
+
 -  **As a user, I want to be able to log off my account.**
 
 Given that the user has already registered an account,  then he is able to log off the account.
+
 -  **As a user, I want to be able to edit my profile. This includes changing my current profile picture and basic info such as name, date of birth...**
 
 Given that the user is logged in, then he is able to edit his profile, namely name, picture, date of birth, etc.
@@ -141,9 +125,11 @@ Given that the user is logged in, then he is able to edit his profile, namely na
 -  **As a user, I want to be able to add someone else as a friend.**
 
 Given that the user is already logged in, then he is able to edit his profile, namely name, picture, date of birth, etc.
+
 -  **As a user, I want to be able to check my friends' profiles and like/comment their posts.**
 
 Given that the user is already logged in and his friend also has an account on the app, the user is able to add his friend and like/comments his posts.
+
 -  **As a user, I want to be able to check my calendar and the conference's event board.**
 
 -  **As a user, I want to be able to upload a story.**
