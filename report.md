@@ -3,7 +3,7 @@
 
   
 
-Welcome to the documentation pages of the *your (sub)product name* of **openCX**!
+Welcome to the documentation pages of MyConference of **openCX**!
 
   
 
@@ -52,7 +52,7 @@ Please contact us!
 
 Thank you!
 
- Henrique Maciel de Freitas - 201707046
+Henrique Maciel de Freitas - 201707046
 João Pedro Pinheiro de Lacerda Campus - 201704982
 Luís Pedro Rodrigues de Morais - 200800621
 Maria Inês Fernandes Alves - 201605335
@@ -77,11 +77,11 @@ Isn't connecting with other people one of the best parts of a conference? Our ap
 ---
 ## Requirements
 
-As a social network MyConference aims in creating a place to interact and share experiences, being able to create posts with pictures about their experience.
+As a social network, MyConference aims at creating a way to let people interact and share experiences, making them able to create posts with pictures about their experience.
 
-Security is something very important to MyConference. Once you create a post nobody can alter your post, moreover nobidy can create a post in your name, making your account truly yours.
+Security is something very important to MyConference. Once you create a post, nobody can alter your post, moreover nobody can create a post in your name, making your account truly yours.
 
-MyComference aims in being user friendly. To this end posting and creating an account is extremely streamlined, being both simple and fast.
+MyConference focus on being user friendly. To this end, posting and creating an account is extremely streamlined, being both simple and fast.
 
 
 ### Use case diagram
@@ -90,13 +90,13 @@ UML image aqui
 
 #
 
-Create an accont: When the user creates an account a new account is added in the data base.
+Create an account: When the user creates an account, a new account and its data are added in the data base.
 
-Log in: When the user puts the correct information, he gained permission to the rest of the features in the app (excluding create an account).
+Log in: When the user puts the its correct information about email and password, he gain permission to the rest of the features in the app (excluding create an account).
 
-See other people post: When the user goes to main page, he can see the other users posts.
+See other people posts: When the user goes to the main page, he can see the other users posts.
 
-Create a post: The user can create a post, adding the post and the image (if was provided) to the database.
+Create a post: The user can create a post, adding a description and an image, that it then added to the database.
 
 ### User stories
 
@@ -104,19 +104,19 @@ Create a post: The user can create a post, adding the post and the image (if was
 
 -  **As a participant of the conference, I want to be able to create a post.**
 
-Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a text post.
+Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a new post with an image.
 
 -  **As a new user, I want to be able to create an account.**
 
-Given that the user has interest in the events of the conference, the user wants an acont to see all the posts and to identify his own posts.
+Given that the user has interest in the events of the conference, the user wants an account to see all the posts and to identify his own posts.
 
 -  **As an already registered user, I want to log in to access the system.**
 
-Given that the user has already registered an account, then he is able to log in to access the system.
+Given that the user is already registered through an account, then he is able to log in to access the system.
 
 -  **As a user, I want to be able to log off my account.**
 
-Given that the user has already registered an account,  then he is able to log off the account.
+Given that the user is already registered through an account and is also logged in,  then he is able to log off the session.
 
 -  **As a user, I want to be able to edit my profile. This includes changing my current profile picture and basic info such as name, date of birth...**
 
@@ -124,17 +124,23 @@ Given that the user is logged in, then he is able to edit his profile, namely na
 
 -  **As a user, I want to be able to add someone else as a friend.**
 
-Given that the user is already logged in, then he is able to edit his profile, namely name, picture, date of birth, etc.
+Given that the user is already logged in, then he is able to see his friend's profile, namely name, picture and posts.
 
 -  **As a user, I want to be able to check my friends' profiles and like/comment their posts.**
 
-Given that the user is already logged in and his friend also has an account on the app, the user is able to add his friend and like/comments his posts.
+Given that the user is already logged in and his friend also has an account on the app, the user is able to add as his friend and like/comments his posts.
 
 -  **As a user, I want to be able to check my calendar and the conference's event board.**
 
+Given that the user is logged in, the user is able to check the conference events schedule.
+
 -  **As a user, I want to be able to upload a story.**
 
+Given that the user is logged in, the user is able to publish a quick story. 
+
 -  **As a forgetful user, I want to be able to request a password reset.**
+
+Given that the user has already an account and is a human being that forgets things, he can reset his passoword and change it as much as he need.
 
 **Mockup of the main page of the app**
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/78345999_902245270177249_7848125922447196160_n.png?_nc_cat=102&_nc_ohc=SmWd1eH1DxsAQkPfCvnz6aiqFUW5SIEmA7MSClp-LqALZN8q92SZCTO9Q&_nc_ht=scontent.flis7-1.fna&oh=79faa27d737f79619cd5d0849f49e934&oe=5E4A680F)
@@ -273,8 +279,8 @@ The following pictures represent our Trello's state in each iteration, with labe
 **Iteration 1:**
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/77237769_3353677271339142_4044629775623389184_n.png?_nc_cat=109&_nc_ohc=iOR9xpF5cYcAQmY8U48dzYHNowcy20ShsWa2qpgMd5k7N1pXrkT5x5Akg&_nc_ht=scontent.flis7-1.fna&oh=7d3e18d92655d3d77b4145da60ef8b44&oe=5E486DFC)
 
-  **Iteration 2:**
-  ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76937839_467558353870479_7474790013411000320_n.png?_nc_cat=101&_nc_ohc=AS3lslmtIgUAQlkdEEYiXtFlaiBEqcpYYsq_kMVvtf3oLzCZZZ1hawm7w&_nc_ht=scontent.flis7-1.fna&oh=991ff23d99370d50b51c576543ec5559&oe=5E444F05)
+**Iteration 2:**
+![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76937839_467558353870479_7474790013411000320_n.png?_nc_cat=101&_nc_ohc=AS3lslmtIgUAQlkdEEYiXtFlaiBEqcpYYsq_kMVvtf3oLzCZZZ1hawm7w&_nc_ht=scontent.flis7-1.fna&oh=991ff23d99370d50b51c576543ec5559&oe=5E444F05)
 
 **Iteration 3:**
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76936388_533023950611187_3340751757557891072_n.png?_nc_cat=103&_nc_ohc=x6P8t4JIYsgAQlX1_ztjx0oJf0f7fSEjMvI4G8IWaanyMP7_AKlhVuNLg&_nc_ht=scontent.flis7-1.fna&oh=40dc26758a1bfc2cf44c3beb6d2c1be9&oe=5E7DE658)
