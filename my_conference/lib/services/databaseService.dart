@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:my_conference/models/postModel.dart';
+import 'package:my_conference/models/userModel.dart';
 import 'package:my_conference/utilities/vars.dart';
 
 class DatabaseService{
@@ -32,5 +33,13 @@ class DatabaseService{
   static Future<QuerySnapshot> searchUsers(String name) {
     Future<QuerySnapshot> snapshots = usersRef.where('name', isGreaterThanOrEqualTo: name).where('name', isLessThan: name + 'z').getDocuments();
     return snapshots;
+  }
+
+  static void updateUser(User user){
+    usersRef.document(user.id).updateData({
+      'name': user.name,
+      'profileImgUrl': user.profileImgUrl,
+      'bio': user.bio,
+    });
   }
 }

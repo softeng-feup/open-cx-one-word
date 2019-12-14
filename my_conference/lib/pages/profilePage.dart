@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:my_conference/models/postModel.dart';
 import 'package:my_conference/models/userModel.dart';
+import 'package:my_conference/pages/editProfilePage.dart';
 import 'package:my_conference/services/databaseService.dart';
 import 'package:my_conference/utilities/vars.dart';
 
@@ -43,15 +44,19 @@ class _ProfilePageState extends State<ProfilePage> {
           children: <Widget>[
             CircleAvatar(
               radius: 45,
-              backgroundImage: NetworkImage(
-                  'https://byuc.files.wordpress.com/2012/07/avat-2.jpg'),
+              backgroundImage: user.profileImgUrl.isEmpty ? AssetImage('assets/images/profile_placeholder.png') : CachedNetworkImageProvider(user.profileImgUrl),
             ),
             Column(
               children: <Widget>[
                 Container(
                   width: 150,
                   child: FlatButton(
-                    onPressed: () => print('Edit Profile button Pressed'),
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (_) => EditProfilePage(user: user),
+                      )
+                    ),
                     color: Colors.blue,
                     textColor: Colors.white,
                     child: Text(

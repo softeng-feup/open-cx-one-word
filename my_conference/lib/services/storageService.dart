@@ -32,4 +32,22 @@ class StorageService{
     String downloadUrl = await storageSnapshot.ref.getDownloadURL();
     return downloadUrl;
   }
+
+  static Future<String> uploadUserProfileImg(String url, File ImageFile) async{
+    String photoId= Uuid().v4();
+    File img = await compressImage(photoId, ImageFile);
+
+    if(url.isNotEmpty){
+      //update image
+      RegExp exp = RegExp(r'userProfile_(.*).jpg');
+      photoId = exp.firstMatch(url)[1];
+      //print(photoId);
+    }
+
+
+    StorageUploadTask uploadTask = storageRef.child('images/users/userProfile_$photoId.jpg').putFile(img);
+    StorageTaskSnapshot storageSnap = await uploadTask.onComplete;
+    String downloadUrl = await storageSnap.ref.getDownloadURL();
+    return downloadUrl;
+  }
 }
