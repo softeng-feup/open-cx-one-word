@@ -66,9 +66,9 @@ class _FeedPageState extends State<FeedPage> {
                         ),
                       )
                   ),
-                  Container(
+                 /*  Container(
                     child: Text(names[index]),
-                  ),
+                  ), */
                 ],
               ),
             ),
@@ -81,7 +81,7 @@ class _FeedPageState extends State<FeedPage> {
   @override
   Widget build(BuildContext context) {
 
-    var userPosts = ;
+    var userPosts = 'GG';
 
     return Scaffold(
       appBar: AppBar(
@@ -96,7 +96,7 @@ class _FeedPageState extends State<FeedPage> {
           ),
         )
       ),
-      body: userPosts
+      body: Text('Test')
     );
   }
 }
