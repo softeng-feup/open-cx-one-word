@@ -162,32 +162,54 @@ MyConference focus on being user friendly. To this end, posting and creating an 
 
   
 
-Create an account: When the user creates an account, a new account and its data are added in the data base.
+**Create an account** 
 
-  
+ - **Actor:** Conference attendee
+ - **Description:** The user is able to create an account on our app.
+ - **Preconditions and postconditions:** 
+    - The user attending the conference must create an account to use our app.
+    - After creating an account, said account and its data is added to the data base.
 
-Log in: When the user puts the its correct information about email and password, he gain permission to the rest of the features in the app (excluding create an account).
+ 
 
-  
+ - **Normal flow:** to do
+ - **Alternative flows and exceptions:** to do
 
-See other people posts: When the user goes to the main page, he can see the other users posts.
+**Log in the account** 
 
-  
+ - **Actor:** Conference attendee
+ - **Description:** The user is able to log in on their account.
+ - **Preconditions and postconditions:** 
+    - The user attending the conference must have an account previously created.
+    - After logging in correctly, the user is able to access the app and its features.
 
-Create a post: The user can create a post, adding a description and an image, that it then added to the database.
+ - **Normal flow:**  
+    - The user, when writing the correct info about their email and       password, gains permission to access the rest of the app.
 
+ - **Alternative flows and exceptions:** to do
+
+**See other people's posts** 
+ - **Actor:** Conference attendee
+ - **Description:** The user is able to see other people's posts on the main page.
+ - **Preconditions and postconditions:** 
+    - The user attending the conference must be logged in on their account and follow the people whose posts they want to see.
+    - While on the home page, the user can see all the posts of the users they follow.
+ - **Normal flow:**  to do
+ - **Alternative flows and exceptions:** to do
+
+**Create a post** 
+ - **Actor:** Conference attendee
+ - **Description:** The user is able to create a post with and image and a description.
+ - **Preconditions and postconditions:** 
+    - The user attending the conference must be logged in on their account.
+    - After creating a post, its info is then added to the database.
+ - **Normal flow:**  to do
+ - **Alternative flows and exceptions:** to do
   
 
 ### User stories
 
-  
-
-  
-
 -  **As a participant of the conference, I want to be able to create a post.**
-
-  
-
 Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a new post with an image.
 
   
@@ -475,7 +497,7 @@ For the purpose of ESOF, we will use a very simple approach, just to manage feat
 
 The following pictures represent our Trello's state in each iteration, with labels for each one of them.
 
-  
+  **[Link to our Trello](https://trello.com/b/Q5mBN4ES)** 
 
 **Iteration 1:**
 
