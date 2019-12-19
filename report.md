@@ -332,7 +332,9 @@ MyConference focus on being user friendly. To this end, posting and creating an 
 -  **As a participant of the conference, I want to be able to create a post.**
 
 **Value: Must have**
+
 **Effort: L**
+
 Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a new post with an image.
 
   
@@ -345,7 +347,9 @@ Given that the user has already logged in the account, when he is a participant 
 
   
 **Value: Must have**
+
 **Effort: M**
+
 Given that the user has interest in the events of the conference, the user wants an account to see all the posts and to identify his own posts.
 
   
@@ -358,7 +362,9 @@ Given that the user has interest in the events of the conference, the user wants
 
   
 **Value: Must have**
+
 **Effort: M**
+
 Given that the user is already registered through an account, then he is able to log in to access the system.
 
   
@@ -371,7 +377,9 @@ Given that the user is already registered through an account, then he is able to
 
   
 **Value: Must have**
+
 **Effort: M**
+
 Given that the user is already registered through an account and is also logged in, then he is able to log off the session.
 
   
@@ -384,7 +392,9 @@ Given that the user is already registered through an account and is also logged 
 
   
 **Value: Must have**
+
 **Effort: L**
+
 Given that the user is logged in, then he is able to edit his profile, namely name, picture, date of birth, etc.
 
   
@@ -397,7 +407,9 @@ Given that the user is logged in, then he is able to edit his profile, namely na
 
   
 **Value: Could have**
+
 **Effort: M**
+
 Given that the user is already logged in, then he is able to see his friend's profile, namely name, picture and posts.
 
   
@@ -410,7 +422,9 @@ Given that the user is already logged in, then he is able to see his friend's pr
 
   
 **Value: Could have**
+
 **Effort: L**
+
 Given that the user is already logged in and his friend also has an account on the app, the user is able to add as his friend and like/comments his posts.
 
   
@@ -420,6 +434,7 @@ Given that the user is already logged in and his friend also has an account on t
 -  **As a user, I want to be able to check my calendar and the conference's event board.**
 
   **Value: Could have**
+  
 **Effort: L**
 
   
@@ -436,7 +451,9 @@ Given that the user is logged in, the user is able to check the conference event
 
   
 **Value: Could have**
+
 **Effort: L**
+
 Given that the user is logged in, the user is able to publish a quick story.
 
   
@@ -449,7 +466,9 @@ Given that the user is logged in, the user is able to publish a quick story.
 
   
 **Value: Could have, not really necessary**
+
 **Effort: M**
+
 Given that the user has already an account and is a human being that forgets things, he can reset his password and change it as much as he needs.
 
   
