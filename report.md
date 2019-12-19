@@ -603,10 +603,7 @@ Given that the user is already logged in and his friend also has an account on t
 
 **Value: Could have**
 
-=======
-  **Value: Could have**
-  
->>>>>>> 3a58b0ec66c12f1173e6ca3d40d33a7898bf3bc6
+
 **Effort: L**
 
   
@@ -1003,10 +1000,6 @@ The following pictures represent our Trello's state in each iteration, with labe
 
 **Iteration 4:**
 
-<<<<<<< HEAD
-  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/80487873_575798133196154_1166426470923370496_n.png?_nc_cat=110&_nc_ohc=KBuPUx8p2XcAQnMqCktehD_gN9eqT76NgJsCfu7rSBlXqjFBdBrs2oRYQ&_nc_ht=scontent.flis7-1.fna&oh=ce817ed8290234590f478ac05e496c3e&oe=5E885C1B)
-=======
-![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/80487873_575798133196154_1166426470923370496_n.png?_nc_cat=110&_nc_ohc=KBuPUx8p2XcAQnMqCktehD_gN9eqT76NgJsCfu7rSBlXqjFBdBrs2oRYQ&_nc_ht=scontent.flis7-1.fna&oh=ce817ed8290234590f478ac05e496c3e&oe=5E885C1B)
->>>>>>> 3a58b0ec66c12f1173e6ca3d40d33a7898bf3bc6
+
