@@ -1,8 +1,11 @@
-
+  
+  
 
   
 
 # openCX-*One Word* Development Report
+
+  
 
   
 
@@ -14,7 +17,11 @@ Welcome to the documentation pages of MyConference of **openCX**!
 
   
 
+  
+
 You can find here detailed about the (sub)product, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report (see [template](https://github.com/softeng-feup/open-cx/blob/master/docs/templates/Development-Report.md)), organized by discipline (as of RUP):
+
+  
 
   
 
@@ -24,7 +31,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 *  [Product Vision](#Product-Vision)
+
+  
 
   
 
@@ -32,7 +43,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 * Requirements
+
+  
 
   
 
@@ -40,7 +55,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 *  [User stories](#User-stories)
+
+  
 
   
 
@@ -48,7 +67,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 * Architecture and Design
+
+  
 
   
 
@@ -56,7 +79,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 *  [Physical architecture](#Physical-architecture)
+
+  
 
   
 
@@ -64,7 +91,11 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 *  [Implementation](#Implementation)
+
+  
 
   
 
@@ -72,11 +103,17 @@ You can find here detailed about the (sub)product, hereby mentioned as module, f
 
   
 
+  
+
 *  [Configuration and change management](#Configuration-and-change-management)
 
   
 
+  
+
 *  [Project management](#Project-management)
+
+  
 
   
 
@@ -88,28 +125,45 @@ So far, contributions are exclusively made by the initial team, but we hope to o
 
   
 
+  
+
 Please contact us!
 
   
+
   
 
 Thank you!
 
   
 
+  
+
 Henrique Maciel de Freitas - 201707046
+
+  
 
 João Pedro Pinheiro de Lacerda Campus - 201704982
 
+  
+
 Luís Pedro Rodrigues de Morais - 200800621
 
+  
+
 Maria Inês Fernandes Alves - 201605335
+
+  
 
 Miguel Silveira Rosa - 201706956
 
   
 
+  
+
 ---
+
+  
 
   
 
@@ -119,23 +173,37 @@ Miguel Silveira Rosa - 201706956
 
   
 
+  
+
 Greatly improve your conference experience while sharing memories and connecting with others.
 
   
 
   
 
+  
+
 ---
+
+  
 
   
 
 ## Elevator Pitch
 
+  
+
 Isn't connecting with other people one of the best parts of a conference? Our app, MyConference, makes sure that your experience is the best it could possibly be. Much like any other social network, you are able to add people at the conference as friends, create new posts - perhaps some thoughts about that amazing talk you just went to, or even a picture of your friends attending the event - and, naturally, comment and like your friend's posts. Besides that, our app will allow you to check all the events currently happening so you won't miss anything!
+
+  
 
 ---
 
+  
+
 ## Requirements
+
+  
 
   
 
@@ -143,75 +211,131 @@ As a social network, MyConference aims at creating a way to let people interact 
 
   
 
+  
+
 Security is something very important to MyConference. Once you create a post, nobody can alter your post, moreover nobody can create a post in your name, making your account truly yours.
+
+  
 
   
 
 MyConference focus on being user friendly. To this end, posting and creating an account is extremely streamlined, being both simple and fast.
 
   
+
   
 
 ### Use case diagram
 
   
 
-
-
   
+  
+  
+
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/79272077_618252938981359_473030337723629568_n.png?_nc_cat=107&_nc_ohc=q2zSkzByjYQAQmVVKFakLLzDjK8ItPtCis5SMyKlWZQcSfWvBTaeClPUg&_nc_ht=scontent.flis7-1.fna&oh=9e499acc9bf82192b0ac8ab3e278316c&oe=5E6D13F9)
 
   
 
-**Create an account** 
+  
 
- - **Actor:** Conference attendee
- - **Description:** The user is able to create an account on our app.
- - **Preconditions and postconditions:** 
-    - The user attending the conference must create an account to use our app.
-    - After creating an account, said account and its data is added to the data base.
+**Create an account**
 
- 
+  
 
- - **Normal flow:** to do
- - **Alternative flows and exceptions:** to do
+-  **Actor:** Conference attendee
 
-**Log in the account** 
+-  **Description:** The user is able to create an account on our app.
 
- - **Actor:** Conference attendee
- - **Description:** The user is able to log in on their account.
- - **Preconditions and postconditions:** 
-    - The user attending the conference must have an account previously created.
-    - After logging in correctly, the user is able to access the app and its features.
+-  **Preconditions and postconditions:**
 
- - **Normal flow:**  
-    - The user, when writing the correct info about their email and       password, gains permission to access the rest of the app.
+- The user attending the conference must create an account to use our app.
 
- - **Alternative flows and exceptions:** to do
+- After creating an account, said account and its data is added to the data base.
 
-**See other people's posts** 
- - **Actor:** Conference attendee
- - **Description:** The user is able to see other people's posts on the main page.
- - **Preconditions and postconditions:** 
-    - The user attending the conference must be logged in on their account and follow the people whose posts they want to see.
-    - While on the home page, the user can see all the posts of the users they follow.
- - **Normal flow:**  to do
- - **Alternative flows and exceptions:** to do
+  
 
-**Create a post** 
- - **Actor:** Conference attendee
- - **Description:** The user is able to create a post with and image and a description.
- - **Preconditions and postconditions:** 
-    - The user attending the conference must be logged in on their account.
-    - After creating a post, its info is then added to the database.
- - **Normal flow:**  to do
- - **Alternative flows and exceptions:** to do
+  
+
+-  **Normal flow:** to do
+
+-  **Alternative flows and exceptions:** to do
+
+  
+
+**Log in the account**
+
+  
+
+-  **Actor:** Conference attendee
+
+-  **Description:** The user is able to log in on their account.
+
+-  **Preconditions and postconditions:**
+
+- The user attending the conference must have an account previously created.
+
+- After logging in correctly, the user is able to access the app and its features.
+
+  
+
+-  **Normal flow:**
+
+- The user, when writing the correct info about their email and password, gains permission to access the rest of the app.
+
+  
+
+-  **Alternative flows and exceptions:** to do
+
+  
+
+**See other people's posts**
+
+-  **Actor:** Conference attendee
+
+-  **Description:** The user is able to see other people's posts on the main page.
+
+-  **Preconditions and postconditions:**
+
+- The user attending the conference must be logged in on their account and follow the people whose posts they want to see.
+
+- While on the home page, the user can see all the posts of the users they follow.
+
+-  **Normal flow:** to do
+
+-  **Alternative flows and exceptions:** to do
+
+  
+
+**Create a post**
+
+-  **Actor:** Conference attendee
+
+-  **Description:** The user is able to create a post with and image and a description.
+
+-  **Preconditions and postconditions:**
+
+- The user attending the conference must be logged in on their account.
+
+- After creating a post, its info is then added to the database.
+
+-  **Normal flow:** to do
+
+-  **Alternative flows and exceptions:** to do
+
   
 
 ### User stories
 
+  
+
 -  **As a participant of the conference, I want to be able to create a post.**
+
+**Value: Must have**
+**Effort: L**
 Given that the user has already logged in the account, when he is a participant of the conference, then he is able to create a new post with an image.
+
+  
 
   
 
@@ -219,7 +343,12 @@ Given that the user has already logged in the account, when he is a participant 
 
   
 
+  
+**Value: Must have**
+**Effort: M**
 Given that the user has interest in the events of the conference, the user wants an account to see all the posts and to identify his own posts.
+
+  
 
   
 
@@ -227,7 +356,12 @@ Given that the user has interest in the events of the conference, the user wants
 
   
 
+  
+**Value: Must have**
+**Effort: M**
 Given that the user is already registered through an account, then he is able to log in to access the system.
+
+  
 
   
 
@@ -235,7 +369,12 @@ Given that the user is already registered through an account, then he is able to
 
   
 
+  
+**Value: Must have**
+**Effort: M**
 Given that the user is already registered through an account and is also logged in, then he is able to log off the session.
+
+  
 
   
 
@@ -243,7 +382,12 @@ Given that the user is already registered through an account and is also logged 
 
   
 
+  
+**Value: Must have**
+**Effort: L**
 Given that the user is logged in, then he is able to edit his profile, namely name, picture, date of birth, etc.
+
+  
 
   
 
@@ -251,7 +395,12 @@ Given that the user is logged in, then he is able to edit his profile, namely na
 
   
 
+  
+**Value: Could have**
+**Effort: M**
 Given that the user is already logged in, then he is able to see his friend's profile, namely name, picture and posts.
+
+  
 
   
 
@@ -259,11 +408,19 @@ Given that the user is already logged in, then he is able to see his friend's pr
 
   
 
+  
+**Value: Could have**
+**Effort: L**
 Given that the user is already logged in and his friend also has an account on the app, the user is able to add as his friend and like/comments his posts.
 
   
 
+  
+
 -  **As a user, I want to be able to check my calendar and the conference's event board.**
+
+  **Value: Could have**
+**Effort: L**
 
   
 
@@ -271,11 +428,18 @@ Given that the user is logged in, the user is able to check the conference event
 
   
 
+  
+
 -  **As a user, I want to be able to upload a story.**
 
   
 
+  
+**Value: Could have**
+**Effort: L**
 Given that the user is logged in, the user is able to publish a quick story.
+
+  
 
   
 
@@ -283,21 +447,33 @@ Given that the user is logged in, the user is able to publish a quick story.
 
   
 
-Given that the user has already an account and is a human being that forgets things, he can reset his passoword and change it as much as he need.
+  
+**Value: Could have, not really necessary**
+**Effort: M**
+Given that the user has already an account and is a human being that forgets things, he can reset his password and change it as much as he needs.
+
+  
 
   
 
 **Mockup of the main page of the app**
 
+  
+  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/78345999_902245270177249_7848125922447196160_n.png?_nc_cat=102&_nc_ohc=SmWd1eH1DxsAQkPfCvnz6aiqFUW5SIEmA7MSClp-LqALZN8q92SZCTO9Q&_nc_ht=scontent.flis7-1.fna&oh=79faa27d737f79619cd5d0849f49e934&oe=5E4A680F)
 
+  
+  
 
 **Mockup of a user's profile**
+
+  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/78100273_460598017795339_7395637176349753344_n.png?_nc_cat=103&_nc_ohc=58YX60gdIKMAQnfPT6549Vo3zX8MFbykp94kWbdEKnG-5srADABqR8RwA&_nc_ht=scontent.flis7-1.fna&oh=8cd5f9d24fae0bac7076009c738f87b9&oe=5E76807D)
 
   
+
   
 
   
@@ -306,19 +482,33 @@ Given that the user has already an account and is a human being that forgets thi
 
   
 
-  Use cases should be described textually.
+  
+
+Use cases should be described textually.
+
+  
 
 User stories not estimated.
 
+  
+
 Very simple and minimalist mockups.
+
+  
 
 Acceptance tests automated?
 
+  
+
 Missing trello link in the report.
 
-
+  
+  
+  
 
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module.
+
+  
 
   
 
@@ -330,20 +520,23 @@ To better understand the context of the software system, it is very useful to ha
 
   
 
+  
+
 ## Architecture and Design
 
-  O foco da nossa arquitetura baseia se na comunicação entre a a aplicação e o servidor. Esta estrutura deve ao facto de quase todas (senão mesmo todas) interações que o utilizador pode fazer na aplicação requererem comunicação com a base de dados do servidor, quer o utilizador crie um novo post, ou esteja simplesmente a ver os posts de outros utilizadores. A comunicação como o servidor é essencial.
-  
-  O design do servidor foi estabelecido por elementos "Colections" de Firebase. Escolhemos este desing pois ele era compativel e facil de implementar com a tecnologia flotter.
-  
-  Na aplicação nos mantivemos um desing simples e compreensível para o utilizador. Com isso em mente as funcionalidades da aplicação estão segregadas em paginas individuais, garantindo que o utilizador tenha uma experiencia simples e que a implementação de novas funcionalidades seja relativamente fácil de integrar. 
-
+  The main focus of our architecture is based on the communication between the app and the server. This structure is due to the fact that almost all (if not all) of the user's possible interactions require communicating with the server's data base, be it the user creating a new post, or simply seeing all the posts of the other users: communicating with the server is essential.
+The design of our server is established by elements "Collections" of Firebase. We chose this design because it was compatible/easy to implement with Flutter.
+In our app we kept a simple and comprehensible design for the user. With this in mind, the functionalities of our app are separated into individual pages, making sure the user's experience is simple and new functionalities are relatively easy to implement.
 ### Logical architecture
 
-	
-  Os diferentes inputs e outputs de data da conecção server-aplication
+  
+Os diferentes inputs e outputs de data da conecção server-aplication
+
+  
 
 The purpose of this subsection is to document the high-level logical structure of the code, using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
+
+  
 
   
 
@@ -353,7 +546,11 @@ It can be beneficial to present the system both in a horizontal or vertical deco
 
   
 
+  
+
 * horizontal decomposition may define layers and implementation concepts, such as the user interface, business logic and concepts;
+
+  
 
   
 
@@ -363,17 +560,24 @@ It can be beneficial to present the system both in a horizontal or vertical deco
 
   
 
-### Physical architecture
+  
 
-A estrutura física da aplicação é simples, tendo apenas uma linha de comunicação entre a aplicação e o server. Através deste a aplicação ganha acesso a base de dados, podendo extrair a informação necessária para as diversas funcionalidades. 
+### Physical architecture
+The physical structure is simple, having only a route of communication between the app and the server - the app then gains access to the data base, being able to extract all the necessary information for its various functionalities.
 
 #incerir o UML fisico
+
+  
 
 ### Prototype
 
   
 
+  
+
 To help on validating all the architectural, design and technological decisions made, we usually implement a vertical prototype, a thin vertical slice of the system.
+
+  
 
   
 
@@ -385,7 +589,11 @@ In this subsection please describe in more detail which, and how, user(s) story(
 
   
 
+  
+
 ---
+
+  
 
   
 
@@ -393,23 +601,7 @@ In this subsection please describe in more detail which, and how, user(s) story(
 
 ## Implementation
 
-  
-
-Regular product increments are a good practice of product management.
-
-  
-
-  
-
-While not necessary, sometimes it might be useful to explain a few aspects of the code that have the greatest potential to confuse software engineers about how it works. Since the code should speak by itself, try to keep this section as short and simple as possible.
-
-  
-
-  
-
-Use cross-links to the code repository and only embed real fragments of code when strictly needed, since they tend to become outdated very soon.
-
-  
+ **descrever o que fizemos em cada iteração, decisoes q tomamos etc**
 
   
 
@@ -417,7 +609,11 @@ Use cross-links to the code repository and only embed real fragments of code whe
 
   
 
+  
+
 ## Test
+
+  
 
   
 
@@ -429,7 +625,11 @@ There are several ways of documenting testing activities, and quality assurance 
 
   
 
+  
+
 In this section it is only expected to include the following:
+
+  
 
   
 
@@ -437,7 +637,11 @@ In this section it is only expected to include the following:
 
   
 
+  
+
 * test case specifications to verify the functionalities, using unit tests and acceptance tests.
+
+  
 
   
 
@@ -447,17 +651,25 @@ A good practice is to simplify this, avoiding repetitions, and automating the te
 
   
 
+  
+
 ---
+
+  
 
   
 
 ## Configuration and change management
 
   
+**como seguimos a github flow, etc etc**
+  
 
   
 
 Configuration and change management are key activities to control change to, and maintain the integrity of, a project’s artifacts (code, models, documents).
+
+  
 
   
 
@@ -469,7 +681,11 @@ For the purpose of ESOF, we will use a very simple approach, just to manage feat
 
   
 
+  
+
 ---
+
+  
 
   
 
@@ -477,25 +693,44 @@ For the purpose of ESOF, we will use a very simple approach, just to manage feat
 
 ## Project management
 
+  
+
 The following pictures represent our Trello's state in each iteration, with labels for each one of them.
 
-  **[Link to our Trello](https://trello.com/b/Q5mBN4ES)** 
+  
+
+**[Link to our Trello](https://trello.com/b/Q5mBN4ES)**
+
+  
 
 **Iteration 1:**
+
+  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/77237769_3353677271339142_4044629775623389184_n.png?_nc_cat=109&_nc_ohc=iOR9xpF5cYcAQmY8U48dzYHNowcy20ShsWa2qpgMd5k7N1pXrkT5x5Akg&_nc_ht=scontent.flis7-1.fna&oh=7d3e18d92655d3d77b4145da60ef8b44&oe=5E486DFC)
 
   
 
+  
+
 **Iteration 2:**
+
+  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76937839_467558353870479_7474790013411000320_n.png?_nc_cat=101&_nc_ohc=AS3lslmtIgUAQlkdEEYiXtFlaiBEqcpYYsq_kMVvtf3oLzCZZZ1hawm7w&_nc_ht=scontent.flis7-1.fna&oh=991ff23d99370d50b51c576543ec5559&oe=5E444F05)
 
   
 
+  
+
 **Iteration 3:**
+
+  
 
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76936388_533023950611187_3340751757557891072_n.png?_nc_cat=103&_nc_ohc=x6P8t4JIYsgAQlX1_ztjx0oJf0f7fSEjMvI4G8IWaanyMP7_AKlhVuNLg&_nc_ht=scontent.flis7-1.fna&oh=40dc26758a1bfc2cf44c3beb6d2c1be9&oe=5E7DE658)
 
+  
+
 **Iteration 4:**
+
 ![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/80487873_575798133196154_1166426470923370496_n.png?_nc_cat=110&_nc_ohc=KBuPUx8p2XcAQnMqCktehD_gN9eqT76NgJsCfu7rSBlXqjFBdBrs2oRYQ&_nc_ht=scontent.flis7-1.fna&oh=ce817ed8290234590f478ac05e496c3e&oe=5E885C1B)
