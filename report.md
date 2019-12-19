@@ -1,4 +1,5 @@
 
+
   
 
 # openCX-*One Word* Development Report
@@ -305,7 +306,17 @@ Given that the user has already an account and is a human being that forgets thi
 
   
 
-  
+  Use cases should be described textually.
+
+User stories not estimated.
+
+Very simple and minimalist mockups.
+
+Acceptance tests automated?
+
+Missing trello link in the report.
+
+
 
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module.
 
@@ -321,35 +332,16 @@ To better understand the context of the software system, it is very useful to ha
 
 ## Architecture and Design
 
+  O foco da nossa arquitetura baseia se na comunicação entre a a aplicação e o servidor. Esta estrutura deve ao facto de quase todas (senão mesmo todas) interações que o utilizador pode fazer na aplicação requererem comunicação com a base de dados do servidor, quer o utilizador crie um novo post, ou esteja simplesmente a ver os posts de outros utilizadores. A comunicação como o servidor é essencial.
   
-
-The architecture of a software system encompasses the set of key decisions about its overall organization.
-
+  O design do servidor foi estabelecido por elementos "Colections" de Firebase. Escolhemos este desing pois ele era compativel e facil de implementar com a tecnologia flotter.
   
-
-  
-
-A well written architecture document is brief but reduces the amount of time it takes new programmers to a project to understand the code to feel able to make modifications and enhancements.
-
-  
-
-  
-
-To document the architecture requires describing the decomposition of the system in their parts (high-level components) and the key behaviors and collaborations between them.
-
-  
-
-  
-
-In this section you should start by briefly describing the overall components of the project and their interrelations. You should also describe how you solved typical problems you may have encountered, pointing to well-known architectural and design patterns, if applicable.
-
-  
-
-  
+  Na aplicação nos mantivemos um desing simples e compreensível para o utilizador. Com isso em mente as funcionalidades da aplicação estão segregadas em paginas individuais, garantindo que o utilizador tenha uma experiencia simples e que a implementação de novas funcionalidades seja relativamente fácil de integrar. 
 
 ### Logical architecture
 
-  
+	
+  Os diferentes inputs e outputs de data da conecção server-aplication
 
 The purpose of this subsection is to document the high-level logical structure of the code, using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
 
@@ -373,19 +365,9 @@ It can be beneficial to present the system both in a horizontal or vertical deco
 
 ### Physical architecture
 
-  
+A estrutura física da aplicação é simples, tendo apenas uma linha de comunicação entre a aplicação e o server. Através deste a aplicação ganha acesso a base de dados, podendo extrair a informação necessária para as diversas funcionalidades. 
 
-The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams or component diagrams (separate or integrated), showing the physical structure of the system.
-
-  
-
-  
-
-It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for openCX are, for example, frameworks for mobile applications (Flutter vs ReactNative vs ...), languages to program with microbit, and communication with things (beacons, sensors, etc.).
-
-  
-
-  
+#incerir o UML fisico
 
 ### Prototype
 
