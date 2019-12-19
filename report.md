@@ -598,7 +598,6 @@ Given that the user is already logged in and his friend also has an account on t
 
 -  **As a user, I want to be able to check my calendar and the conference's event board.**
 
-<<<<<<< HEAD
   
 
 **Value: Could have**
