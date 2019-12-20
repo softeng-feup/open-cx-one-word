@@ -921,40 +921,7 @@ Given that the user has already an account and is a human being that forgets thi
 
   
 
-  
-
-  
-
-  
-
-Use cases should be described textually.
-
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-
-Acceptance tests automated?
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+  ![Domain model](https://github.com/softeng-feup/open-cx-one-word/blob/master/Domain%20module.png)
   
 
 ---
@@ -995,7 +962,7 @@ In our app we kept a simple and comprehensible design for the user. With this in
   
 
   
-![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/fisical%20diagram.png)
+![Logical diagram](https://github.com/softeng-feup/open-cx-one-word/blob/master/logical%20diagram.png)
   
 
   
@@ -1008,7 +975,7 @@ The physical structure is simple, having only a route of communication between t
 
   
 
-![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/fisical%20diagram.png)
+![physical diagram](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/fisical%20diagram.png)
 
   
 
