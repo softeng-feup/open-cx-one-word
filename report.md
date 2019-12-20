@@ -990,57 +990,12 @@ In our app we kept a simple and comprehensible design for the user. With this in
 ### Logical architecture
 
   
-
-  
-
-Os diferentes inputs e outputs de data da conecção server-aplication
-
+  For the logical part of the architecture we decided to segregate the features, puting a feature in each page of the app. This decision in desing was made to simplify the app for user, and to be more easy to implement more features in the future.
+  Until now we have created 5 diferent moduels, each one having an unique interation with the server.
   
 
   
-
-  
-
-The purpose of this subsection is to document the high-level logical structure of the code, using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
-
-  
-
-  
-
-  
-
-  
-
-  
-
-It can be beneficial to present the system both in a horizontal or vertical decomposition:
-
-  
-
-  
-
-  
-
-  
-
-* horizontal decomposition may define layers and implementation concepts, such as the user interface, business logic and concepts;
-
-  
-
-  
-
-  
-
-  
-
-* vertical decomposition can define a hierarchy of subsystems that cover all layers of implementation.
-
-  
-
-  
-
-  
-
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/fisical%20diagram.png)
   
 
   
@@ -1093,76 +1048,9 @@ There were some features initially planned that we chose not to implement - name
 
   
 
+    We mainly testes our app using it in real time. We did not exstablish tests due to our app being straitfoward and simple to use.
+  The testes were made in between each new feature added, to certify the older features and the news ones were working as intended.
   
-
-  
-
-  
-
-  
-
-There are several ways of documenting testing activities, and quality assurance in general, being the most common: a strategy, a plan, test case specifications, and test checklists.
-
-  
-
-  
-
-  
-
-  
-
-  
-
-In this section it is only expected to include the following:
-
-  
-
-  
-
-  
-
-  
-
-* test plan describing the list of features to be tested and the testing methods and tools;
-
-  
-
-  
-
-  
-
-  
-
-* test case specifications to verify the functionalities, using unit tests and acceptance tests.
-
-  
-
-  
-
-  
-
-  
-
-A good practice is to simplify this, avoiding repetitions, and automating the testing actions as much as possible.
-
-  
-
-  
-
-  
-
-  
-
-  
-
----
-
-  
-
-  
-
-  
-
   
 
 ## Configuration and change management
