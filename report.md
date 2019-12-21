@@ -1141,9 +1141,7 @@ Given that the user has already an account and is a human being that forgets thi
 
   
 
-  
-
-![Domain model](https://github.com/softeng-feup/open-cx-one-word/blob/master/Domain%20module.png)
+  ![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/Domain%20module.png)
 
   
 
@@ -1196,8 +1194,7 @@ For the logical part of the architecture we decided to segregate the features, p
 Until now we have created 5 diferent modules, each one having a unique interaction with the server.
 
   
-
-![Logical diagram](https://github.com/softeng-feup/open-cx-one-word/blob/master/logical%20diagram.png)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/logical%20diagram.png)
 
   
 
@@ -1215,7 +1212,7 @@ The physical structure is simple, having only a route of communication between t
 
   
 
-![physical diagram](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/fisical%20diagram.png)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/fisical%20diagram.png)
 
   
 
