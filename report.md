@@ -1,3 +1,4 @@
+
   
 
   
@@ -1353,7 +1354,7 @@ The following pictures represent our Trello's state in each iteration, with labe
 
   
 
-![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/77237769_3353677271339142_4044629775623389184_n.png?_nc_cat=109&_nc_ohc=iOR9xpF5cYcAQmY8U48dzYHNowcy20ShsWa2qpgMd5k7N1pXrkT5x5Akg&_nc_ht=scontent.flis7-1.fna&oh=7d3e18d92655d3d77b4145da60ef8b44&oe=5E486DFC)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/trello_ite1.png)
 
   
 
@@ -1375,7 +1376,7 @@ The following pictures represent our Trello's state in each iteration, with labe
 
   
 
-![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76937839_467558353870479_7474790013411000320_n.png?_nc_cat=101&_nc_ohc=AS3lslmtIgUAQlkdEEYiXtFlaiBEqcpYYsq_kMVvtf3oLzCZZZ1hawm7w&_nc_ht=scontent.flis7-1.fna&oh=991ff23d99370d50b51c576543ec5559&oe=5E444F05)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/trello_ite2.png)
 
   
 
@@ -1397,7 +1398,7 @@ The following pictures represent our Trello's state in each iteration, with labe
 
   
 
-![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/76936388_533023950611187_3340751757557891072_n.png?_nc_cat=103&_nc_ohc=x6P8t4JIYsgAQlX1_ztjx0oJf0f7fSEjMvI4G8IWaanyMP7_AKlhVuNLg&_nc_ht=scontent.flis7-1.fna&oh=40dc26758a1bfc2cf44c3beb6d2c1be9&oe=5E7DE658)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/trello_ite3.png)
 
   
 
@@ -1413,4 +1414,4 @@ The following pictures represent our Trello's state in each iteration, with labe
 
   
 
-![enter image description here](https://scontent.flis7-1.fna.fbcdn.net/v/t1.15752-9/80487873_575798133196154_1166426470923370496_n.png?_nc_cat=110&_nc_ohc=KBuPUx8p2XcAQnMqCktehD_gN9eqT76NgJsCfu7rSBlXqjFBdBrs2oRYQ&_nc_ht=scontent.flis7-1.fna&oh=ce817ed8290234590f478ac05e496c3e&oe=5E885C1B)
+![enter image description here](https://raw.githubusercontent.com/softeng-feup/open-cx-one-word/master/images/trello_ite4.png)
