@@ -29,15 +29,16 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final String currentUserId = Provider.of<UserData>(context).currentUserId;
     return Scaffold(
       body: PageView(
         controller: _pageController,
         children: <Widget>[
-          FeedPage(),
+          FeedPage(currentUserId: currentUserId,),
           SearchPage(),
           CreatePostPage(),     
           ActivityPage(),
-          ProfilePage(userId: Provider.of<UserData>(context).currentUserId),
+          ProfilePage(currentUserId: currentUserId, userId: currentUserId),
         ],
         onPageChanged: (int index){
           setState(() {

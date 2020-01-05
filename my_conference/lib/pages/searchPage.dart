@@ -1,8 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:my_conference/models/userData.dart';
 import 'package:my_conference/models/userModel.dart';
 import 'package:my_conference/pages/profilePage.dart';
 import 'package:my_conference/services/databaseService.dart';
+import 'package:provider/provider.dart';
 
 class SearchPage extends StatefulWidget {
 
@@ -23,6 +25,7 @@ class _SearchPageState extends State<SearchPage> {
       onTap: () => Navigator.push(
         context, MaterialPageRoute(
           builder: (_) => ProfilePage(
+            currentUserId: Provider.of<UserData>(context).currentUserId,
             userId: user.id,
             ),
           ),
